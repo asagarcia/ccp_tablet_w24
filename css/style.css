@@ -1,7 +1,7 @@
 body {
-    background-color: black;
+    background-color: whitesmoke;
     text-align: justify;
-    color:white;
+    color:black;
     margin-left: 30px;
     margin-right: 30px
 }
@@ -43,7 +43,7 @@ nav ul {
     text-decoration: underline;
   }
   img {
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
   }
   video {
@@ -86,3 +86,24 @@ h3 {
       animation: none !important;
     }
   }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header{
+      background-attachment: initial;
+    }
+  }
+
+/* Tablet view */
+@media (min-width: 800px) {
+  
+}
